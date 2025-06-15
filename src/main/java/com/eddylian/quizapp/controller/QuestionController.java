@@ -1,6 +1,6 @@
 package com.eddylian.quizapp.controller;
 
-import com.eddylian.quizapp.Question;
+import com.eddylian.quizapp.model.Question;
 import com.eddylian.quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
