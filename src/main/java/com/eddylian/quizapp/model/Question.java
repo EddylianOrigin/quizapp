@@ -1,4 +1,4 @@
-package com.eddylian.quizapp;
+package com.eddylian.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
