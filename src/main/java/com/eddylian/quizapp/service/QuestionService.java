@@ -1,7 +1,7 @@
 package com.eddylian.quizapp.service;
 
-import com.eddylian.quizapp.model.Question;
 import com.eddylian.quizapp.dao.QuestionDao;
+import com.eddylian.quizapp.model.Question;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
