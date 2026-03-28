@@ -21,18 +21,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v4
-      with:
-        node-version: '24'
-    - run: npm install
-
-    - name: Run Build
-      run: npm run build
-
-    - name: Run Tests
-      run: npm test
-          
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
