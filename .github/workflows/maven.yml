@@ -24,10 +24,11 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v4
       with:
-        node-version: '24.x'
-        cache: npm
-    - name: Install dependencies
-      run: npm ci
+        cache-dependency-path: subdir/package-lock.json
+        node-version: '24'
+        cache: 'npm'
+    - run: npm ci
+    - run: npm test
         
     - name: Set up JDK 17
       uses: actions/setup-java@v4
