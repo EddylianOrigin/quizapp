@@ -33,9 +33,11 @@ concurrency:
 # --- Global defaults ---
 env:
   JAVA_VERSION: "17"
-  JAVA_DISTRIBUTION: "Temurin"
+  JAVA_DISTRIBUTION: "temurin"
   MAVEN-OPTS: "-Xmx1024m"
   APP_NAME: "quizapp"
+  # Opt into Node.js 24 for all actions
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
   
 jobs:
   build:
