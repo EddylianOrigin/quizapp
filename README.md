@@ -12,9 +12,9 @@ Before to start, you will need to install these:
 
 ## Necessary Steps to get access to the project 
 - First of all, clone the project on your local device using the git command :
-
-  * Git clone "url of the repository"
-
+  ```
+  Git clone "url of the repository"
+  ```
 - Open the project using VScode or another python IDE of your choice.
   
 - Open the terminal in the IDE to the path corresponding to the project.
@@ -23,11 +23,13 @@ Before to start, you will need to install these:
 
 Run this command on the opened terminal:
 - Build the project (download dependencies, compile the code, and run tests by default)
-  * mvn clean install 
-
+  ```
+  mvn clean install 
+  ```
 - Run the Project (Spring Boot application from the main class annotated with @SpringBootApplication will be executed.)
-  * mvn spring-boot:run 
-
+  ```
+  mvn spring-boot:run 
+  ```
 ## Learn more
 
 To learn Spring, check out the Documentation::> https://spring.io/quickstart
