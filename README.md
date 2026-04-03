@@ -34,4 +34,4 @@ To learn Spring, check out the Documentation::> https://spring.io/quickstart
 
 To learn rest API::> https://spring.io/guides/tutorials/rest
 
-Feel free to extend the project and let me know about any changes or progress you've made by offering me some like on the project repo just for fun. :)
+Please feel free to develop the project further and let me know about any changes or progress you’ve made by giving the project repository a ‘like’ – just for fun. :)
