@@ -6,7 +6,7 @@ Before to start, you will need to install these:
 
 - Git::> https://git-scm.com/downloads
 
-- java::> [https://www.python.org/downloads/](https://www.oracle.com/java/technologies/downloads/#java21)
+- Java (Jdk_17) ::> https://www.oracle.com/java/technologies/downloads/#java21
 
 - Docker ::> https://www.docker.com/get-started/
 
