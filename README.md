@@ -1,7 +1,7 @@
 # Getting start with quizapp
 Running this Spring project involves several steps. Here’s a comprehensive guide to get you started.
 
-## installation required
+## Installation required
 Before to start, you will need to install these: 
 
 - Git::> https://git-scm.com/downloads
@@ -9,6 +9,8 @@ Before to start, you will need to install these:
 - Java (Jdk_17) ::> https://www.oracle.com/java/technologies/downloads/#java21
 
 - Docker ::> https://www.docker.com/get-started/
+
+- PostgreSQL ::> https://www.postgresql.org/download/
 
 ## Necessary Steps to get access to the project 
 - First of all, clone the project on your local device using the git command :
