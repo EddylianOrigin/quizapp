@@ -22,7 +22,12 @@ Before to start, you will need to install these:
 - Open the terminal in the IDE to the path corresponding to the project.
 
 ## Install Spring Dependancy and run the project:
+- Run PostgreSql( pgadmin or a Terminal instance) first
 
+- login
+  
+- add required setting in project like username and password 
+  
 Run this command on the opened terminal:
 - Build the project (download dependencies, compile the code, and run tests by default)
   ```
@@ -32,6 +37,10 @@ Run this command on the opened terminal:
   ```
   mvn spring-boot:run 
   ```
+
+(In case of error message try to debug with your IDE)
+  ...in progress
+  
 ## Learn more
 
 To learn Spring, check out the Documentation::> https://spring.io/quickstart
