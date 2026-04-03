@@ -39,6 +39,7 @@ Run this command on the opened terminal:
   ```
 
 (In case of error message try to debug with your IDE)
+
   ...in progress
   
 ## Learn more
