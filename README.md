@@ -19,7 +19,7 @@ Before to start, you will need to install these:
   
 - Open the terminal in the IDE to the path corresponding to the project.
 
-## ## Install Spring Dependancy and run the project:
+## Install Spring Dependancy and run the project:
 
 Run this command on the opened terminal:
 - Build the project (download dependencies, compile the code, and run tests by default)
@@ -31,5 +31,7 @@ Run this command on the opened terminal:
 ## Learn more
 
 To learn Spring, check out the Documentation::> https://spring.io/quickstart
+
+To learn rest API::> https://spring.io/guides/tutorials/rest
 
 Feel free to extend the project and let me know about any changes or progress you've made by offering me some like on the project repo just for fun. :)
