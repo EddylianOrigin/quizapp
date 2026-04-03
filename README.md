@@ -19,7 +19,7 @@ Before to start, you will need to install these:
   
 - Open the terminal in the IDE to the path corresponding to the project.
 
-## Install Django: Use pip to install Django within the virtual environment:
+## ## Install Spring Dependancy and run the project:
 
 Run this command on the opened terminal:
 - Build the project (download dependencies, compile the code, and run tests by default)
