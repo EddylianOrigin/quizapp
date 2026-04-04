@@ -11,8 +11,16 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "master", "develop" ]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
+      - ".gitignore"
+      
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+      - "**/*.md"
+      - "docs/**"
 
   workflow_dispatch:
     inputs:
@@ -38,6 +46,8 @@ env:
   APP_NAME: "quizapp"
   # Opt into Node.js 24 for all actions
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+# FIRST STAGE - BUILD
   
 jobs:
   build:
@@ -57,3 +67,7 @@ jobs:
         
     - name: Compile & package (skip tests)
       run: mvn -B clean package --file pom.xml -DskipTests
+
+# SECOND STAGE - TEST
+
+# THIRD STAGE - DEPLOY
