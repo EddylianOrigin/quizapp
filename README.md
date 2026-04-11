@@ -50,6 +50,8 @@ Run this command on the opened terminal:
 
 To learn Spring, check out the Documentation::> https://spring.io/quickstart
 
+To learn Angular, check out the Documentation::> https://next.angular.dev/overview
+
 To learn rest API::> https://spring.io/guides/tutorials/rest
 
 Please feel free to develop the project further and let me know about any changes or progress you’ve made by giving the project repository a ‘like’ – just for fun. :)
