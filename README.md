@@ -12,6 +12,10 @@ Before to start, you will need to install these:
 
 - PostgreSQL ::> https://www.postgresql.org/download/
 
+- NodeJs ::> https://nodejs.org/en/download
+
+- Angular ::> https://next.angular.dev/installation
+
 ## Necessary Steps to get access to the project 
 - First of all, clone the project on your local device using the git command :
   ```
@@ -45,6 +49,8 @@ Run this command on the opened terminal:
 ## Learn more
 
 To learn Spring, check out the Documentation::> https://spring.io/quickstart
+
+To learn Angular, check out the Documentation::> https://next.angular.dev/overview
 
 To learn rest API::> https://spring.io/guides/tutorials/rest
 
