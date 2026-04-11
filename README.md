@@ -12,6 +12,10 @@ Before to start, you will need to install these:
 
 - PostgreSQL ::> https://www.postgresql.org/download/
 
+- NodeJs ::> https://nodejs.org/en/download
+
+- Angular ::> https://next.angular.dev/installation
+
 ## Necessary Steps to get access to the project 
 - First of all, clone the project on your local device using the git command :
   ```
