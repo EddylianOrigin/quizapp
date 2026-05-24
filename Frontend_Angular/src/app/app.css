@@ -1,0 +1,81 @@
+#categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#first_section {
+  border: 0 transparent;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 15px;
+}
+
+  #second_section {
+    border: 0 transparent;
+    box-sizing: border-box;
+  }
+
+  #first_section #science {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #first_section #history {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;;
+    margin: 20px;
+  }
+
+  #first_section #geography {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;;
+    margin: 20px;
+  }
+
+  #second_section #general_knowledge {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #second_section #technologies {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  #second_section #sports {
+    text-align: center;
+    border-color: transparent;
+    border-width: 1px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 20px;
+  }

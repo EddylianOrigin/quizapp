@@ -1,17 +1,20 @@
+# Stage 1: Build
 FROM maven AS build
 
-WORKDIR /springAppProjekt/quizapp/Backend
+WORKDIR /Backend_Spring
 
 COPY . .
 
 RUN mvn clean install -DskipTests
 
+
+# Stage 2: Run
 FROM openjdk:17-jdk-slim
 
-WORKDIR /springAppProjekt/quizapp/Backend
+WORKDIR /Backend_Spring
 
-COPY --from=build /springAppProjekt/quizapp/Backend/target/backend*.jar springAppProjekt.jar
+COPY --from=build /Backend_Spring/target/Backend*.jar springBackendAppProjekt.jar
 
-EXPOSE 1221
+EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "springAppProjekt.jar"]
+ENTRYPOINT ["java", "-jar", "springBackendAppProjekt.jar"]

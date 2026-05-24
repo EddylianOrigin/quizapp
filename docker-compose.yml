@@ -1,0 +1,35 @@
+
+services:
+  Backend:
+    build:
+      context: Backend_Spring
+      dockerfile: Dockerfile
+    container_name: Backend_Spring
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8090:8080"
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB: question
+    ports:
+      - "5431:5433"
+
+  Frontend:
+    build:
+      context: Frontend_Angular
+      dockerfile: Dockerfile
+    container_name: Frontend_Angular
+    restart: unless-stopped
+    depends_on:
+      - Backend
+    ports:
+      - "4200:4210"
+
