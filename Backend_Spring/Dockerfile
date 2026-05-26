@@ -1,7 +1,7 @@
 # Stage 1: Build
-FROM maven AS build
+FROM maven:3.9-eclipse-temurin-17 AS build
 
-WORKDIR /Backend_Spring
+WORKDIR /quizapp/Backend_Spring
 
 COPY . .
 
@@ -9,11 +9,13 @@ RUN mvn clean install -DskipTests
 
 
 # Stage 2: Run
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jre
 
-WORKDIR /Backend_Spring
+LABEL maintainer="EDDYLIAN"
 
-COPY --from=build /Backend_Spring/target/Backend*.jar springBackendAppProjekt.jar
+WORKDIR /quizapp/Backend_Spring
+
+COPY --from=build /quizapp/Backend_Spring/target/Backend*.jar springBackendAppProjekt.jar
 
 EXPOSE 8080
 
