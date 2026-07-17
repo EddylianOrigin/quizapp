@@ -7,14 +7,16 @@
   <title>Homepage</title>
 </head>
 <body>
-<section>
-  <h1 class="text-3xl font-bold underline">QuizMaster</h1>
-  <p>Test your knowledge, track your progress and challenge yourself with interactive quizzes</p>
+<section class="banner">
+  <h1 class="text-center font-bold underline">QuizMaster</h1>
+  <p class="text-center">Test your knowledge, track your progress and challenge yourself with interactive quizzes</p>
 </section>
-<section id="categories">
-  <h2 class="text-3xl font-bold underline">Select a category</h2>
+<section class="header">
+  <h2 class="text-3xl italic font-bold underline">Select a category</h2>
+</section>
+<section class="categories">
 <div id="first_section">
-  <button id="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition"> <img src="../public/science_logo.png" alt="icon" class="w-5 h-5"> Science </button>
+  <button id="science"> <img src="../public/science_logo.png" alt="science" class="w-5 h-5"> Science </button>
   <button id="history"> <img src="../public/science_logo.png"> History </button>
   <button id="geography"> <img src="../public/science_logo.png" fill> Geography </button>
 </div>
@@ -26,9 +28,14 @@
 </section>
 <section>
   <div>
-  <button>Dashboard</button>
-  <button>create a quiz</button>
+  <button id="Dashboard">Dashboard</button>
+  <button id="quiz">create a quiz</button>
   </div>
-</section>
+  </section>
+  <footer>
+    <div id="rights">
+    <p>&copy; 2026 QuizMaster. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,4 +1,17 @@
-#categories {
+.banner {
+  background-color: #AEF;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #AEF;
+  color: white;
+}
+
+.categories {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,9 +25,44 @@
 }
 
 button {
-  font-size: 15px;
+  position: relative;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: gradientShift 6s ease infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  transform: rotate(25deg);
+  transition: opacity 0.4s ease;
+}
+.btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+}
+.btn:hover::before {
+  opacity: 1;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   #second_section {
     border: 0 transparent;
     box-sizing: border-box;
@@ -79,3 +127,20 @@ button {
     padding: 20px;
     margin: 20px;
   }
+
+footer {
+  background-color: #CCFF;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+#rights{
+  display: flex;
+  justify-content: center;
+}
+
