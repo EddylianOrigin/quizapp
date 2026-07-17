@@ -1,0 +1,46 @@
+services:
+  backend:
+    build:
+      context: Backend_Spring
+      dockerfile: Dockerfile
+    container_name: Backend_Spring
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8090:8090"
+    networks:
+      - s-network
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: question
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready" ,"-U", "username", "-d", "question"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - s-network
+
+  frontend:
+    build:
+      context: Frontend_Angular
+      dockerfile: Dockerfile
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+    networks:
+      - s-network
+
+networks:
+  s-network:
+    driver: bridge

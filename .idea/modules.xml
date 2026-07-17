@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Frontend_Angular/Frontend_Angular.iml" filepath="$PROJECT_DIR$/Frontend_Angular/Frontend_Angular.iml" />
-      <module fileurl="file://$PROJECT_DIR$/quizapp.iml" filepath="$PROJECT_DIR$/quizapp.iml" />
     </modules>
   </component>
 </project>
